@@ -12,7 +12,8 @@ class Application extends Component {
         listeStatuts : null,
         listeAlimentations : null,
         jojo : null,
-        gege : null
+        gege : null,
+        dede : null
     }
 
     loadData = () => {
@@ -134,7 +135,7 @@ class Application extends Component {
                             this.state.oiseaux && 
                             this.state.oiseaux.map(oiseau => {
                                 return (
-                                    <div className="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-6 p-2" key={oiseau.id}>
+                                    <div className="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-2" key={oiseau.id}>
                                         <Oiseau 
                                             {...oiseau} 
                                             filtreStatut = {this.handleSelectionStatut}
@@ -143,6 +144,7 @@ class Application extends Component {
                                             gege = {this.state.filtreAlimentation}
                                             reset = {this.handleResetFiltreStatut}
                                             rereset = {this.handleResetFiltreAlimentation}
+                                            dede = {this.state.oiseaux}
                                             />
                                     </div>
                                 )

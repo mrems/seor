@@ -24,12 +24,7 @@ class Contact extends Component {
                 <div>
                 <Titre>Contact</Titre>
                 <div className="container ">
-                    <h4>Adresse :</h4>
-                    SEOR <br></br>
-                    13, ruelle des Orchidées
-                    Cambuston <br></br>
-                    97440 SAINT ANDRE <br></br>
-                    Téléphone: 02 62 20 46 65 <br></br><br></br>
+                   
                     
                     <Formulaire sendMail = {this.handleEnvoiMail}/>
                 </div>

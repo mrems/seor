@@ -1,3 +1,6 @@
+
+/* GENERAL */
+
 html,body{
     width: 100%;
     overflow-x: hidden;
@@ -18,7 +21,7 @@ h1{
 
 h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 
-
+/* NAVBAR */
 
 .navbar { 
     height: 130px; 
@@ -32,17 +35,50 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 
 .navbar-collapse{ z-index: 12;}
 
-.container-contact{
-    width: 700px
+
+
+
+/* CARDS */
+
+.card-header{ 
+    background-color: rgb(218, 225, 231);
+    cursor: pointer;
 }
 
-/* .site {
-    min-height:100vh;
-    margin-bottom:-140px;
-} */
+.card {
+    
+    height: 450px;
+    width: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+    
+}
+
+.card_side--front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    
+    
+}
+.card_side--back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: white;
+    
+}
+
+.rotate{transform: rotateY(180deg);}   
+
+/* FOOTER */
 
 footer{
-    /* height:140px; */
+ 
     margin-top: 200px;
     padding-top: 20px;
     background-color: #3575b5;
@@ -74,7 +110,7 @@ footer li:hover{
 footer .copyright{color: white;}
 
 
-.card-header{ background-color: rgb(218, 225, 231);}
+
 
 @media only screen and (max-width:720px){
     
