@@ -7,19 +7,21 @@ html,body{
     background-color: rgb(239, 247, 255)
 }
 
-
-h1, h2, h3, h4, h5, h6{
-    font-family:  cursive;
-}
-
 h1{
-    /* text-align: center; */
     margin: 120px 0px 140px;
     font-family: 'Lobster Two', cursive;
     font-size: 4em;
 }
 
+h2, h3, h4, h5, h6{
+    font-family:  cursive;
+}
+
+
 h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
+
+
+
 
 /* NAVBAR */
 
@@ -47,7 +49,6 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 }
 
 .card {
-    
     height: 450px;
     width: auto;
     position: relative;
@@ -60,10 +61,9 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
     width: 100%;
     height: 100%;
     position: absolute;
-    backface-visibility: hidden;
-    
-    
+    backface-visibility: hidden; 
 }
+
 .card_side--back{
     width: 100%;
     height: 100%;
@@ -71,10 +71,11 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
     transform: rotateY(180deg);
     backface-visibility: hidden;
     background-color: white;
-    
 }
 
 .rotate{transform: rotateY(180deg);}   
+
+
 
 /* FOOTER */
 
@@ -112,21 +113,17 @@ footer .copyright{color: white;}
 
 
 
+/* RESPONSIVE */
 
 @media only screen and (max-width:720px){
-    
     h1{
         font-size: 2em; 
         margin: 40px 0px 80px;
     }
-
     footer{
         margin-top: 100px;
     }
-
     footer li{
         margin:0px 10px;
-    }
-
-    
+    }  
 }
