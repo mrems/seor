@@ -43,6 +43,7 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 .card-header{ 
     background-color: rgb(218, 225, 231);
     cursor: pointer;
+    
 }
 
 .card {
@@ -52,7 +53,7 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.7s ease;
-    
+    user-select: none;
 }
 
 .card_side--front{
