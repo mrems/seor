@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Titre from "../../../components/UI/Titres/TitreH1";
 import axios from "axios";
 import Oiseau from "./Oiseau/Oiseau";
-import Bouton from "../../../components/UI/Bouton/Bouton";
+// import Bouton from "../../../components/UI/Bouton/Bouton";
 
 class Application extends Component {
     state = {
@@ -64,20 +64,20 @@ class Application extends Component {
     render() {
 
         
-        let nomStatutFiltre="";   
-            if(this.state.filtreStatut){
-            nomStatutFiltre = (this.state.listeStatuts[this.state.filtreStatut-1].statut)
-            }
-        let nomAlimentationFiltre="";   
-            if(this.state.filtreAlimentation){
-            nomAlimentationFiltre = (this.state.listeAlimentations[this.state.filtreAlimentation-1].alimentation)
-            }
+        // let nomStatutFiltre="";   
+        //     if(this.state.filtreStatut){
+        //     nomStatutFiltre = (this.state.listeStatuts[this.state.filtreStatut-1].statut)
+        //     }
+        // let nomAlimentationFiltre="";   
+        //     if(this.state.filtreAlimentation){
+        //     nomAlimentationFiltre = (this.state.listeAlimentations[this.state.filtreAlimentation-1].alimentation)
+        //     }
 
 
         return (
             <>
                 <Titre>Les Oiseaux de l'île</Titre>
-                <div className="container-Fluid">
+                {/* <div className="container-Fluid">
                     <span>Filtres : </span>
                     <select onChange={(event) => this.handleSelectionStatut(event.target.value)} >
                         <option value="-1" selected={this.state.filtreStatut=== null && "selected"}>Statut</option>
@@ -127,15 +127,19 @@ class Application extends Component {
                             </svg>
                             </Bouton>
                     }
-                </div><br></br>
+                </div><br></br> */}
 
-                <div className="container-fluid">
-                    <div className="row no-gutters">
+                <div >
+                    <div style={{margin:"0 auto",
+                                display:"grid",
+                                gridTemplateColumns:"repeat(auto-fill, 280px)",
+                                justifyContent:"center",
+                                gap:"20px", }}>
                         {
                             this.state.oiseaux && 
                             this.state.oiseaux.map(oiseau => {
                                 return (
-                                    <div className="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-2" key={oiseau.id}>
+                                    <div  key={oiseau.id}>
                                         <Oiseau 
                                             {...oiseau} 
                                             filtreStatut = {this.handleSelectionStatut}

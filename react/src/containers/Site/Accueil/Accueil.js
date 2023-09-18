@@ -18,7 +18,7 @@ class Accueil extends Component {
         return (
             <div>
                 <Slider/>
-                <Titre className='display-3'>Recensement et observations </Titre>
+                <Titre >Recensement et observations </Titre>
                 <div className="container">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
@@ -46,10 +46,10 @@ class Accueil extends Component {
                     </div><br></br>
                     <div className="row align-items-center">
                         <div className="col-12 col-md-6">
-                            <img src={oiseau1} alt='logo du site' className="img-fluid p-4" />
+                            <img src={oiseau1} alt='logo du site' className="img-fluid img-txt p-4" />
                         </div>
                         <div className="col-12 col-md-6">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
                             Accusantium quaerat consequuntur assumenda est accusamus vel delectus libero ipsam 
                             doloremque non maxime tempora aut, dolorum, dolore minus dolorem neque?
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
@@ -58,10 +58,10 @@ class Accueil extends Component {
                             habitant nihil felis mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum,
                             sint maxime neque turpis ipsam torquent delectus felis.Dictum ultricies habitant nihil felis 
                             mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum, sint maxime neque 
-                            turpis ipsam torquent delectus felis.
+                            turpis ipsam torquent delectus felis.</p>
                         </div>
                         <div className="col-12 col-md-6">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
                             Accusantium quaerat consequuntur assumenda est accusamus vel delectus libero ipsam 
                             doloremque non maxime tempora aut, dolorum, dolore minus dolorem neque?
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
@@ -70,7 +70,7 @@ class Accueil extends Component {
                             habitant nihil felis mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum,
                             sint maxime neque turpis ipsam torquent delectus felis.Dictum ultricies habitant nihil felis 
                             mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum, sint maxime neque 
-                            turpis ipsam torquent delectus felis.
+                            turpis ipsam torquent delectus felis.</p>
                         </div>
                         <div className="col-12 col-md-6">
                             <img src={oiseau2} alt='logo du site' className="img-fluid p-4" />
@@ -79,7 +79,7 @@ class Accueil extends Component {
                             <img src={oiseau3} alt='logo du site' className="img-fluid p-4" />
                         </div>
                         <div className="col-12 col-md-6">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
                             Accusantium quaerat consequuntur assumenda est accusamus vel delectus libero ipsam 
                             doloremque non maxime tempora aut, dolorum, dolore minus dolorem neque?
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, placeat! 
@@ -88,7 +88,7 @@ class Accueil extends Component {
                             habitant nihil felis mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum,
                             sint maxime neque turpis ipsam torquent delectus felis.Dictum ultricies habitant nihil felis 
                             mauris. Autem doloribus necessitatibus, distinctio veritatis voluptatum, sint maxime neque 
-                            turpis ipsam torquent delectus felis.
+                            turpis ipsam torquent delectus felis.</p>
                         </div>
                     </div><br></br><br></br>
                     <div>

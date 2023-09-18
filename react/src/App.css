@@ -4,19 +4,25 @@
 html,body{
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(239, 247, 255)
+    background-color: rgb(239, 247, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85em;
+}
+
+.container{
+    width: 80vw;
 }
 
 h1{
-    margin: 120px 0px 140px;
-    font-family: 'Lobster Two', cursive;
-    font-size: 4em;
+    margin: 0px 0px 100px;
+    padding-top: 140px;
+    /* font-family: 'Lobster Two', cursive; */
+    font-size: 3.5em;
+    
+
 }
 
-h2, h3, h4, h5, h6{
-    font-family:  cursive;
-}
-
+p { font-size: 1.2em;}
 
 h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 
@@ -26,12 +32,20 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 /* NAVBAR */
 
 .navbar { 
-    height: 130px; 
-    font-size: 1em;   
+    width: 100%;
+    /* height: 130px;  */
+    /* font-size: 0.8em; */
+    position: absolute;   
+    z-index: 3;
+    /* font-family: 'Inter', sans-serif; */
+
 }
 
 
-.nav-link{color:#3575b5 !important}
+.nav-link{
+    color:#3575b5 !important;
+    font-weight: bold;
+}
 
 .nav-link:hover{color:rgb(45, 31, 121) !important}
 
@@ -42,6 +56,8 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 
 /* CARDS */
 
+span {margin-left: 50px;}
+
 .card-header{ 
     background-color: rgb(218, 225, 231);
     cursor: pointer;
@@ -49,12 +65,13 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 }
 
 .card {
-    height: 450px;
-    width: auto;
+    height: 420px;
+   
     position: relative;
     transform-style: preserve-3d;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
     user-select: none;
+    zoom: 75%;
 }
 
 .card_side--front{
@@ -84,6 +101,7 @@ footer{
     margin-top: 200px;
     padding-top: 20px;
     background-color: #3575b5;
+    zoom:80%
 }
 
 footer li {
@@ -102,7 +120,7 @@ footer li {
 }
 
 footer li:hover{
-    transition: 0.8s;
+    transition: 0.5s;
     transform: scale(1.1);
     cursor: pointer;
     color: #3575b5;
@@ -115,10 +133,12 @@ footer .copyright{color: white;}
 
 /* RESPONSIVE */
 
+
 @media only screen and (max-width:720px){
     h1{
-        font-size: 2em; 
-        margin: 40px 0px 80px;
+        font-size: em; 
+        margin: 0px 0px 80px;
+        padding-top: 100px;
     }
     footer{
         margin-top: 100px;
@@ -126,4 +146,7 @@ footer .copyright{color: white;}
     footer li{
         margin:0px 10px;
     }  
+    .navbar{
+        padding: 0px;
+    }
 }

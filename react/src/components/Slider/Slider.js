@@ -4,7 +4,7 @@ import "../../components/Slider/Slider.css" ;
 import carousel1 from "../../assets/images/carousel1.jpg";
 import carousel2 from "../../assets/images/carousel2.jpg";
 import carousel3 from "../../assets/images/carousel3.jpg";
-import carousel4 from "../../assets/images/carousel4.jpg";
+// import carousel4 from "../../assets/images/carousel4.jpg";
 
 function Slider () {
 
@@ -18,21 +18,21 @@ function Slider () {
         {
             id: 2,
             image:carousel2,
-            title:'Des espèces uniques au monde',
-            text: "band zespès i trouv rien k'terla"
+            title:'Des espèces en danger',
+            text: "band zespès i trouv pu"
         },
         {
             id: 3,
             image:carousel3,
-            title:'Protègeons nos oiseaux',
-            text: 'protèz nout bann zoizo'
-        },
-        {
-            id: 4,
-            image:carousel4,
             title:'Notre patrimoine',
             text: 'nout zoizo'
-        }
+        },
+        // {
+        //     id: 4,
+        //     image:carousel4,
+        //     title:'Notre patrimoine',
+        //     text: 'nout zoizo'
+        // }
         
         ]
 

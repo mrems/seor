@@ -2,7 +2,7 @@ import React from "react";
 
 const titreH1 = (props) => {
     
-    let monCss = ` p-1  text-center `;
+    let monCss = ` text-center `;
     return <><h1 className={monCss} style={{ 
         color: '#3575b5',
         }}>{props.children}</h1>
