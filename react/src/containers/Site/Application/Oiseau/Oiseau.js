@@ -48,7 +48,7 @@ const Oiseau = (props) => (
                         var jo = props.dede.findIndex(iscoco)     
                         coco[jo].classList.toggle('rotate'); }}
                 >{props.nom}</h3>
-                <div className="card-body">
+                <div className="card-body-back">
                     <div className="card-text"><p>{props.description}</p></div><br></br>
                     <h5 className="mb-0">{props.statut.descriptionStatut}</h5>
                 </div>
