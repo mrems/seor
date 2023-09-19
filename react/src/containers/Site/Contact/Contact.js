@@ -23,7 +23,7 @@ class Contact extends Component {
             <>
                 <div>
                 <Titre>Contact</Titre>
-                <div className="container ">
+                <div className="container d-flex justify-content-center">
                    
                     
                     <Formulaire sendMail = {this.handleEnvoiMail}/>

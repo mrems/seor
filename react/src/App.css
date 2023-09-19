@@ -94,6 +94,11 @@ span {margin-left: 50px;}
 
 .card-body-back{padding: 30px 50px;}
 
+form {
+   width: 500px;
+}
+
+
 /* FOOTER */
 
 footer{
