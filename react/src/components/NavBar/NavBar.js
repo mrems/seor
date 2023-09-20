@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const navbar = (props) => (
     <>
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <a className="navbar-brand" href="/">
                 <img src={logo} alt='logo seor' width='130px' className="rounded"/>
             </a>

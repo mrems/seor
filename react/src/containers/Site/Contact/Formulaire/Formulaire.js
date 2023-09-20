@@ -6,9 +6,8 @@ const Formulaire = (props) => (
     <> 
         <form>
             <div>
-                <div className="form-group">
-                    {/* <label htmlFor="nom">Nom :</label> */}
-                    <input type="text" className="form-control" id="nom" aria-describedby="nomHelp" placeholder="Nom"
+                <div className="form-group inputBox">
+                    <input type="text" className="form-control" id="nom" placeholder="Nom"
                         name="nom"
                         onChange={props.handleChange}
                         value={props.values.nom}
@@ -18,9 +17,8 @@ const Formulaire = (props) => (
                         props.touched.nom && props.errors.nom && <span style={{color:"red"}}>{props.errors.nom}</span>
                     }
                 </div>
-                <div className="form-group">
-                    {/* <label htmlFor="email">email :</label> */}
-                    <input type="text" className="form-control" id="email" aria-describedby="nomHelp" placeholder="Email"
+                <div className="form-group inputBox">
+                    <input type="text" className="form-control" id="email" placeholder="Email"
                         name="email"
                         onChange={props.handleChange}
                         value={props.values.email}
@@ -30,8 +28,7 @@ const Formulaire = (props) => (
                         props.touched.email && props.errors.email && <span style={{color:"red"}}>{props.errors.email}</span>
                     }
                 </div>
-                <div className="form-group">
-                    {/* <label htmlFor="message">Message :</label> */}
+                <div className="form-group inputBox">
                     <textarea className="form-control" id="message" rows="9" placeholder="Message"
                         name="message"
                         onChange={props.handleChange}
@@ -42,7 +39,7 @@ const Formulaire = (props) => (
                         props.touched.message && props.errors.message && <span style={{color:"red"}}>{props.errors.message}</span>
                     }
                 </div>
-                <button type="submit" className="btn btn-lg btn-primary btn-block mt-5 " onClick={props.handleSubmit}>Envoyer</button>
+                <button type="submit" className="btn btn-lg btn-primary btn-block mt-5 btn-formulaire " onClick={props.handleSubmit}>Envoyer</button>
                 
             </div>
         </form>
