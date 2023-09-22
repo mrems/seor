@@ -65,6 +65,7 @@
         width: 100vw !important;
         height: 50vh;
         object-fit: cover;
+        object-position: 15%;
     }
     .carousel .overlay_title {
         display:none ;

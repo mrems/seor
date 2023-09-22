@@ -43,14 +43,17 @@ h5{margin-bottom: Opx !important; padding-bottom: 0px !important;}
 
 
 .nav-link{
-    color:#3575b5 !important ;
+    color:rgb(81, 76, 231)!important ;
     font-weight: bold;
+    padding-right: 40px !important;
 }
 
-.nav-link:hover{color:#3575b5bb !important }
+.nav-link:hover{
+    color: #1463b1!important;
+    border-left: 2px solid #3575b5
+ }
 
 .navbar-collapse{ z-index: 12;}
-
 
 
 
@@ -109,9 +112,9 @@ form {
 .inputBox textarea {
     padding: 10px;
     border-bottom: 2px solid #3575b571;
-    border-left: 2px solid rgba(81, 76, 231, 0.349);
-    border-right: 2px solid rgba(81, 76, 231, 0.349);
-    background:  rgb(239, 247, 255);
+    border-left: 2px solid #3575b571;
+    /* border-right: 2px solid rgba(81, 76, 231, 0.349); */
+    background:  rgba(218, 242, 255, 0.518);
     border-radius: 5px;
     outline: none;
     color: #3575b5e1 !important;
@@ -120,11 +123,11 @@ form {
 
 
 .btn-formulaire {
-    background-color: #3575b5db !important ;
+    background-color: #3575b5 !important ;
 }
 
 .btn-formulaire:hover {
-    background-color: #3575b5 !important ;
+    background-color:  #075cb1 !important;
 }
 
 
@@ -134,7 +137,7 @@ footer{
  
     margin-top: 200px;
     padding-top: 20px;
-    background-color: #3575b5;
+    background-color: #03417E;
     zoom:80%
 }
 
@@ -150,14 +153,14 @@ footer li {
     border: 1px solid white;
     border-radius: 50%;
     transform: .5s;
-    background-color: #3575b5;
+    background-color: #03417E;
 }
 
 footer li:hover{
     transition: 0.5s;
     transform: scale(1.1);
     cursor: pointer;
-    color: #3575b5;
+    color: #03417E;
     background-color: rgb(248, 252, 255);
 }
 
@@ -166,6 +169,14 @@ footer .copyright{color: white;}
 
 
 /* RESPONSIVE */
+
+
+@media only screen and (max-width:1000px){
+    .nav-link:hover{
+        border-left: none
+     }
+    
+}
 
 
 @media only screen and (max-width:720px){
@@ -183,4 +194,5 @@ footer .copyright{color: white;}
     .navbar{
         padding: 0px;
     }
+    
 }
