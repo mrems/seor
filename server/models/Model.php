@@ -4,6 +4,7 @@ abstract class Model {
 
     private static function setBdd(){
         self::$pdo = new PDO("mysql:host=localhost;dbname=seor;charset=utf8","root","");
+        // self::$pdo = new PDO("mysql:host=sql302.infinityfree.com;dbname=if0_35082728_seor;charset=utf8","if0_35082728","Hhemtj6SktB");
         self::$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
     }
 

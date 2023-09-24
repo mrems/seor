@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Titre from "../../../components/UI/Titres/TitreH1";
 import axios from "axios";
 import Oiseau from "./Oiseau/Oiseau";
-// import Bouton from "../../../components/UI/Bouton/Bouton";
+
+const hostname = "http://localhost:8090/seor/server/"
+// const hostname = "seor.great-site.net/"
 
 class Application extends Component {
     state = {
@@ -19,7 +21,7 @@ class Application extends Component {
     loadData = () => {
         const statut = this.state.filtreStatut ? this.state.filtreStatut : "-1";
         const alimentation = this.state.filtreAlimentation ? this.state.filtreAlimentation : "-1";
-        axios.get(`http://localhost:8090/seor/server/front/oiseaux/${statut}/${alimentation}`)
+        axios.get(`${hostname}front/oiseaux/${statut}/${alimentation}`)
             .then(reponse => {
                 this.setState({oiseaux:Object.values(reponse.data)});
             })
@@ -27,11 +29,11 @@ class Application extends Component {
 
     componentDidMount = () => {
         this.loadData();
-        axios.get(`http://localhost:8090/seor/server/front/alimentation`)
+        axios.get(`${hostname}front/alimentation`)
             .then(reponse => {
                 this.setState({listeAlimentations:Object.values(reponse.data)});
             })
-        axios.get(`http://localhost:8090/seor/server/front/statut`)
+        axios.get(`${hostname}front/statut`)
             .then(reponse => {
                 this.setState({listeStatuts:Object.values(reponse.data)});
             })
